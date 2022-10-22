@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wheel</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+		img {
+    	-webkit-transition: -webkit-transform 2s ease-out;
+		}
+
+		.center{
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+	/*	  margin-top:100px;*/
+		/*  margin-bottom:-50px;*/
+		}
+
+		.wheelContainer img{
+			margin:-500px;
+		}
+	</style>
+</head>
+<body>
+<div id="wheelContainer">
+<img class="center" height="100" onclick="changeWheel()" src="../assets/tools/wheel-pointer.png" />
+<img id="wheel" class="center" width="400" height="400" src="../assets/tools/wheels/wheel1.png">
+<!-- <img id="wheel" class="center" width="400" height="400" src="../assets/tools/wheel-noe.png"> -->
+</div>
+
+</body>
+<script>
+	var counter = 0;
+	function changeWheel(){
+		wheel=document.getElementById('wheel');
+		if (counter==0){
+			wheel.src="../assets/tools/wheels/wheel2.png";
+			counter++;
+		} else if (counter==1){
+			wheel.src="../assets/tools/wheels/wheel1.png";
+			counter=0;
+		}
+	}
+
+	var img = document.getElementById("wheel");
+	img.addEventListener('click', onClick, false);
+
+
+	function onClick() {
+	    this.removeAttribute('style');
+	    
+	    var deg = 500 + Math.round(Math.random() * 500);
+	    
+	    var css = '-webkit-transform: rotate(' + deg + 'deg);';
+	    
+	    this.setAttribute(
+	        'style', css
+	    );
+	}
+</script>
+</html>

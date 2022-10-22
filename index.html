@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fantasy Land</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/positions.css">
+	<link rel="stylesheet" type="text/css" href="styles/tools.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="containment-wrapper">
+<!-- placed -->
+	<!-- 2022/9/23 -->
+	<img id="ballpit" class="building" src="assets/alice/ballpit.png">
+	<a href="pages/laundryCave.html">
+	<img id="laundryCave" class="draggable building" src="assets/kay/cave.png">
+	</a>
+	<a href="pages/aliceApartments.html">
+	<img id="aliceApartments" class="draggable place" src="assets/alice/apartments-thumb.png">
+	</a>
+	<a href="pages/towerTrouble.html">
+	<img id="towerTrouble" class="draggable building" src="assets/maria/tower.png">
+	</a>
+	<a href="pages/shoeHouse.html">
+	<img id="shoeHouse" class="draggable building" src="assets/maria/shoe-house.png">
+	</a>
+	<a href="pages/loloBed.html">
+	<img id="loloBed" class="draggable vehicle" src="assets/kay/lolo-bed.png">
+	</a>
+	<!-- 2022/10/19 -->
+	<a href="pages/emileHome.html">
+	<img id="emileHome" class="draggable vehicle" src="assets/emile/453-house.png">
+	</a>
+	<a href="pages/bottleHome.html">
+	<img id="bottleHome" class="draggable vehicle" src="assets/lumen/house1.png">
+	</a>
+	<a href="pages/shperthHome.html">
+	<img id="shperthHome" class="draggable vehicle" src="assets/lumen/house2.png">
+	</a>
+	<a href="pages/eyeballHome.html">
+	<img id="eyeballHome" class="draggable vehicle" src="assets/lumen/house3.png">
+	</a>
+	<a href="pages/skeletopsHome.html">
+	<img id="skeletopsHome" class="draggable building" src="assets/aristotle/skeletops-castle.png">
+	</a>
+	<a href="pages/twoheadHome.html">
+	<img id="twoheadHome" class="draggable building" src="assets/rui/two-head-house.png">
+	</a>
+	<a href="#bottleHome"> 
+	<img id="lumenPortal" class="draggable building" src="assets/lumen/portal-lumen-house.png">
+	</a>
+	<a href="#aliceSupermarket"> 
+	<img id="supermarketPortal" class="draggable building" src="assets/alice/supermarket-portal.png">
+	</a>
+	<a href="pages/aliceSupermarket.html"> 
+	<img id="aliceSupermarket" class="draggable building" src="assets/alice/supermarket.png">
+	</a>
+	<a href="pages/poopCottage.html"> 
+	<img id="poopCottage" class="draggable building" src="assets/kay/poop-cottage.png">
+	</a>
+	<img id="hairStump" class="vehicle" src="assets/maria/hair-stump.png">
+	<img id="hairTree" class="building" src="assets/maria/hair-tree.png">
+	<img id="hairBranch" class="draggable wide-avatar" src="assets/maria/hair-branch.png">
+
+<!-- draggable -->
+	<!-- 2022/9/23 -->
+	<img id="draggable" class="avatar" src="assets/alice/ballcat.png">
+	<img id="draggable" class="wide-avatar real-bunny" ondblclick="transformClass('alice','real-bunny')" src="assets/alice/real-bunny1.png">
+	<img id="draggable" class="avatar" src="assets/alice/donald.png">
+	<img id="draggable" class="avatar" src="assets/alice/peng.png">
+	<img id="draggable" class="avatar" src="assets/alice/pinkcream.png">
+	<img id="draggable" class="avatar" src="assets/alice/pretzel.png">
+	<img id="draggable" class="avatar" src="assets/alice/bearstick.png">
+	<img id="draggable" class="avatar" src="assets/alice/key.png">
+
+	<!-- 2022/10/12 -->
+	<img id="draggable" class="wide-avatar" src="assets/maria/applehead.png">
+	<!-- <img id="draggable" class="avatar" src="assets/maria/bad-elf.png"> -->
+	<img id="draggable" class="avatar" src="assets/lumen/eyeball.png">
+	<img id="draggable" class="horse wide-avatar" ondblclick="transformClass('maria','horse')" src="assets/maria/horse1.png">
+	<img id="draggable" class="avatar" src="assets/maria/little-bear.png">
+	<img id="draggable" class="item" src="assets/maria/little1.png">
+	<img id="draggable" class="item" src="assets/maria/little2.png">
+	<img id="draggable" class="item" src="assets/maria/little3.png">
+	<img id="draggable" class="item" src="assets/maria/little4.png">
+	<img id="draggable" class="item" src="assets/maria/little5.png">
+	<img id="draggable" class="item" src="assets/maria/little6.png">
+	<img id="draggable" class="item" src="assets/maria/little7.png">
+	<img id="draggable" class="item" src="assets/maria/little8.png">
+	<img id="draggable" class="item" src="assets/maria/little9.png">
+	<img id="draggable" class="item" src="assets/maria/little10.png">
+	<img id="draggable" class="item" src="assets/alice/luck-potion.png">
+	<img id="draggable" class="item" src="assets/alice/wish-potion.png">
+	<img id="draggable" class="avatar" src="assets/maria/littlered.png">
+	<img id="draggable" class="wide-avatar" src="assets/lumen/lumen-drawing.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/ori1.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/ori2.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/ori3.png">
+	<img id="draggable" class="wide-avatar" src="assets/alice/polygreen.png">
+	<img id="draggable" class="wide-avatar" src="assets/alice/quadrangle.png">
+	<img id="draggable" class="avatar" src="assets/aristotle/skeletops.png">
+	<img id="draggable" class="avatar" src="assets/maria/perfect-time.png">
+	<img id="draggable" class="super-ball item" ondblclick="transformClass('emile','super-ball')" src="assets/emile/super-ball1.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/mysterious-man.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/two-head.png">
+	<img id="draggable" class="avatar" src="assets/kay/lolo.png">
+	<img id="draggable" class="avatar" src="assets/emile/emile.png">
+	<img id="draggable" class="wide-avatar" src="assets/lumen/mister-bottle.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth1.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth2.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth3.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth4.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth5.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth6.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth7.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth8.png">
+	<img id="draggable" class="item" src="assets/lumen/shperth9.png">
+
+	<!-- 2022/10/19 -->
+	<img id="draggable" class="wide-avatar" src="assets/rui/lil-guy.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/big-guy.png">
+	<img id="draggable" class="avatar" src="assets/emile/dazu.png">
+	<img id="draggable" class="avatar" src="assets/aristotle/knight1.png">
+	<img id="draggable" class="avatar" src="assets/aristotle/knight2.png">
+	<img id="draggable" class="avatar" src="assets/aristotle/knight3.png">
+	<img id="draggable" class="avatar" src="assets/aristotle/knight4.png">
+	<img id="draggable" class="building" src="assets/aristotle/knights.png">
+	<img id="draggable" class="avatar" src="assets/lumen/mister-mouth.png">
+	<img id="draggable" class="avatar" src="assets/lumen/mister-nose.png">
+	<img id="draggable" class="avatar" src="assets/lumen/mister-tongue.png">
+	<img id="draggable" class="avatar" src="assets/alice/pegaduck.png">
+	<img id="draggable" class="avatar" src="assets/maria/bald-squirrel.png">
+	<img id="draggable" class="avatar" src="assets/maria/shadow-lizard.png">
+	<img id="draggable" class="avatar" src="assets/emile/dazu.png">
+
+</div>
+
+<!-- foreground -->
+	<img id="treeMap" src="assets/maps/trees.gif">
+	<img id="rainbowMap" class="draggable" src="assets/maps/rainbow.png">
+	<!-- <div id="kaboom" class="drop"></div> -->
+
+	<div id="toolbox">
+		<a href="pages/spinTheWheel.html">
+		<img id="spinButton" class="tool" src="assets/tools/wheel-all.png"></a>
+		<img id="lightButton" class="tool" onclick="lightOff()" src="assets/tools/sunset.png">
+		<img id="slowButton" class="tool" onclick="slowDown()" src="assets/tools/slow-button.png">
+		<img id="mapButton" class="draggable tool" ondblclick="enlarge('mapButton')" src="assets/tools/mini-map.png">
+		<img id="twoheadKey" class="draggable tool" ondblclick="enlarge('twoheadKey')" src="assets/rui/twohead-key.png">
+	<!-- 	<img id="danceButton" class="tool" onclick="danceBreak()" src="assets/tools/dance-button.png">
+		<img id="sunButton" class="tool" onclick="waterBreak()" src="assets/tools/sun-button.png">
+		<audio id="danceSound" src="assets/maria/danceSound.mp3"></audio>
+		<audio id="waterSound" src="assets/maria/waterSound.mp3"></audio> -->
+	</div>
+
+</body>
+<script type="text/javascript" src="scripts/automate.js"></script>
+<script type="text/javascript" src="scripts/draggable.js"></script>
+<script type="text/javascript" src="scripts/toggle.js"></script>
+<script type="text/javascript" src="scripts/tools.js"></script>
+</html>

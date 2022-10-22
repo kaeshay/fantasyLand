@@ -1,0 +1,117 @@
+body{
+	margin:0px;
+	background-color:black;
+}
+#containment-wrapper {
+  position:absolute;
+  width:4964px;
+  height:3256px;
+  background-image: url('../assets/maps/map.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*filter:hue-rotate(320deg) brightness(120%);*/
+}
+@keyframes fade-out {
+  from{filter:opacity(1);}
+  to{filter:opacity(0);}
+}
+@keyframes fade-in {
+  from{filter:opacity(0);}
+  to{filter:opacity(1);}
+}
+@keyframes blur {
+  from{filter:blur(0px);}
+  to{filter:blur(7px);}
+}
+@keyframes invert {
+  from{filter:invert(0);}
+  to{filter:invert(1);}
+}
+@keyframes hue-rotate {
+  from{filter:hue-rotate(0deg) brightness(100%)}
+  to{filter:hue-rotate(100deg) brightness(60%)}
+}
+@keyframes hue-rotate2 {
+  from{filter:hue-rotate(360deg) brightness(100%)}
+  to{filter:hue-rotate(320deg) brightness(130%)}
+}
+.item{
+	position:absolute;
+	height:50px;
+}
+/*.item{
+	position:absolute;
+	width:50px;
+}*/
+.medium-item{
+	position:absolute;
+	width:180px;
+}
+.big-item{
+	position:absolute;
+	width:200px;
+}
+.avatar{
+	position:absolute;
+	height:100px;
+}
+.wide-avatar{
+	position:absolute;
+	width:120px;
+}
+.vehicle{
+	position:absolute;
+	width:180px;
+}
+.building{
+	position:absolute;
+	width:250px;
+}
+.place{
+	position:absolute;
+	width:500px;
+}
+.monster{
+	position:absolute;
+	width:300px;
+}
+.inventory{
+	display:none;
+	border:2px dashed #ccc;
+	margin-top:100px;
+	width:300px;
+	height:300px;
+}
+.pack{
+	position:absolute;
+	width:500px;
+}
+.pack-item{
+	width:50px;
+}
+.pack-avatar{
+	width:70px;
+}
+.pack-wide-avatar{
+	width:120px;
+}
+.pack-vehicle{
+	width:200px;
+}
+.gone{
+	display:none;
+}
+.container{
+	position:absolute;
+/*	border:2px solid black;*/
+	width:100px;
+	height:100px;
+}
+.drop{
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:100vh;
+}

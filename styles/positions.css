@@ -1,0 +1,100 @@
+#treeMap{
+	position:absolute;
+	opacity:90%;
+	/*display:none;*/
+	/*margin:0px;
+	top:0px;
+	left:0px;
+*/
+	pointer-events:none;
+}
+#rainbowMap{
+	position:absolute;
+	opacity:90%;
+	/*display:none;*/
+	pointer-events:none;
+}
+
+#giantDrop{
+  background-image: url('../assets/kay/giant-dance.gif');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  top:-300px;
+}
+
+#ballpit{
+	left:3743px;
+	top:1717px;
+}
+#aliceApartments{
+	left:3879px;
+	top:238px;
+}
+#shoeHouse{
+	left: 1260px;
+	top: 2170px;
+}
+#towerTrouble{
+	left: 4px;
+	top: 283px;
+}
+#laundryCave{
+	left: 2850px;
+	top: 219px;
+}
+#loloBed{
+	left: 4572px;
+	top: 2697px;
+}
+#aliceSupermarket{
+	left: 3683px;
+	top: 97px;
+}
+#supermarketPortal{
+	left: 1063px;
+  	top: 1805px;
+}
+#lumenPortal{
+	left: 1900px;
+	top: 354px;
+}
+#twoheadHome{
+	left: 2187px;
+	top: 210px;
+}
+#skeletopsHome{
+	left: 2430px;
+	top: 413px;
+}
+#eyeballHome{
+	left: 1723px;
+	top: 2230px;
+}
+#shperthHome{
+	left: 1906px;
+	top: 2263px;
+}
+#bottleHome{
+	left: 2077px;
+	top: 2210px;
+}
+#emileHome{
+	left: 2407px;
+	top: 2620px;
+}
+#poopCottage{
+	left: 1113px;
+	top: 1377px;
+}
+#hairTree{
+	left: 1576px;
+	top: 2671px;
+}
+#hairBranch{
+	left: 1575px;
+	top: 2731px;
+}
+#hairStump{
+	left: 1491px;
+	top: 2927px;
+}
